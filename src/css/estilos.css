@@ -1,0 +1,118 @@
+body {
+  background: center;
+  background-image: url(../images/fundo-site.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 50px;
+}
+
+.cabecalho .titulo {
+  background-color: yellow;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.cabecalho .icone {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.tierlist {
+  min-width: 320px;
+  max-width: 920px;
+}
+
+img {
+  width: 85px;
+  height: 85px;
+}
+
+.update {
+  background-color: yellow;
+}
+
+.accordion {
+  list-style-type: none;
+  background-color: #fffb;
+  color: #000;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.first {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.panel {
+  padding: 0 18px;
+  font-weight: 300;
+  font-size: 15px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 10s ease-out;
+}
+
+.accordion:after {
+  content: "\02795";
+  font-size: 13px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+i {
+  color: black;
+  background-color: yellow;
+  font-size: 30px;
+  padding: 6px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+i:hover {
+  color: yellow;
+  background-color: black;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
