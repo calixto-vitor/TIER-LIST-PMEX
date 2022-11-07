@@ -37,59 +37,51 @@ body {
   margin: 30px 0;
 }
 
-.tierlist {
-  min-width: 320px;
-  max-width: 920px;
-}
-
 img {
-  width: 85px;
-  height: 85px;
+  width: 60px;
 }
 
 .update {
   background-color: yellow;
 }
 
-.accordion {
-  list-style-type: none;
-  background-color: #fffb;
-  color: #000;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 17px;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  max-width: 405px;
+  font-weight: 300;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tab button {
+  background-color: inherit;
+  width: 80px;
+  float: left;
   border: none;
   outline: none;
-  transition: 0.4s;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.3s;
 }
 
-.first {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+.tab button:hover {
+  background-color: #ddd;
 }
 
-.panel {
-  padding: 0 18px;
-  font-weight: 300;
-  font-size: 15px;
-  background-color: white;
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
   display: none;
-  overflow: hidden;
-  transition: max-height 10s ease-out;
-}
-
-.accordion:after {
-  content: "\02795";
-  font-size: 13px;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2796";
+  background-color: #f1f1f1;
+  max-width: 402px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s;
 }
 
 i {
