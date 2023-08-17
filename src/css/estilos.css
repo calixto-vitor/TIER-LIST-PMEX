@@ -46,6 +46,14 @@ body {
   background-color: yellow;
 }
 
+.upgrade {
+  background-color: green;
+}
+
+.downgrade {
+  background-color: red;
+}
+
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
